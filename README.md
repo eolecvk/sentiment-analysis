@@ -4,7 +4,7 @@
     
 ### Sources
 
-    Collect sentiment dictionnary
+    Collect sentiment lexicons
     - positive-words.txt
     - negative-words.txt
     
@@ -55,8 +55,3 @@ dataFrame with Tracks, Count positive, Count negative, Count no mood info
 * OUTPUT
     
       + TRACK_ID | TRACK_MOOD  lyrics_terms_df
-
-
-* OUTPUT:
-
-  + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
