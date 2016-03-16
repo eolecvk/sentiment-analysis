@@ -14,9 +14,9 @@
     
     
     
-### mood_df
+### Initialize mood data
 
-Map each stemmed word with a mood score if available
+`mood_df`: DataFrame mapping each stemmed word with a mood score if available in the sentiment lexicons
     
     * INPUTS
     
@@ -28,9 +28,11 @@ Map each stemmed word with a mood score if available
     * OUTPUT
     
         + STEMMED | MOOD
-            
-### lyrics_df
-dataFrame with Tracks, Count positive, Count negative, Count no mood info
+
+
+### Initialize lyrics data
+
+`lyrics_df`: DataFrame with Tracks_ID, Count positive, Count negative, Count no mood info
 
     * INPUTS
     
