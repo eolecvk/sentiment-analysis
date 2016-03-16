@@ -33,27 +33,26 @@
            
            
 ### `lyrics_df`
-#### dataFrame with Tracks, Count positive, Count negative, Count no mood info
+dataFrame with Tracks, Count positive, Count negative, Count no mood info
 
-    * INPUTS
+* INPUTS
     
       + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
       + STEMMED | MOOD                           mood.df
-           
-           
-    * OUTPUT:
+
+* OUTPUT:
     
       + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
 
 
 ### `final_df`
 
-    * INPUT
+* INPUT
     
        + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
       
       
-    * OUTPUT
+* OUTPUT
     
       + TRACK_ID | TRACK_MOOD  lyrics_terms_df
 
@@ -61,12 +60,3 @@
 * OUTPUT:
 
   + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
-final_df
-* INPUT
-
-   + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
-
-
-* OUTPUT
-
-  + TRACK_ID | TRACK_MOOD  lyrics_terms_df
