@@ -1,7 +1,5 @@
 # sentiment-analysis
 
-## Roadmap
-    
 ### Sources
 
     Collect sentiment lexicons
@@ -34,23 +32,22 @@ Map each stemmed word with a mood score if available
 ### lyrics_df
 dataFrame with Tracks, Count positive, Count negative, Count no mood info
 
-* INPUTS
+    * INPUTS
+    
+        + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
+        + STEMMED | MOOD                           mood.df
+    
+    * OUTPUT
+    
+        + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
 
-    + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
-    + STEMMED | MOOD                           mood.df
 
-* OUTPUT:
-
-    + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
-
-
-### `final_df`
+### final_df
 
     * INPUT
         
         + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
-          
-          
+    
     * OUTPUT
         
         + TRACK_ID | TRACK_MOOD  lyrics_terms_df
