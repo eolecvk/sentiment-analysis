@@ -16,42 +16,41 @@
     
     
     
-### `mood_df`
-#### Map each stemmed word with a mood score if available
+### mood_df
+
+Map each stemmed word with a mood score if available
     
     * INPUTS
     
-      + STEMMED   | UNSTEMMED    mxm_reverse_mapping.txt
-      + UNSTEMMED | MOOD (=1)    positive-words.txt
-      + UNSTEMMED | MOOD (=-1)   negative-words.txt
-            
-            
+        + STEMMED   | UNSTEMMED    mxm_reverse_mapping.txt
+        + UNSTEMMED | MOOD (=1)    positive-words.txt
+        + UNSTEMMED | MOOD (=-1)   negative-words.txt
+        
+        
     * OUTPUT
     
-      + STEMMED | MOOD
+        + STEMMED | MOOD
             
-           
-           
-### `lyrics_df`
+### lyrics_df
 dataFrame with Tracks, Count positive, Count negative, Count no mood info
 
 * INPUTS
-    
-      + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
-      + STEMMED | MOOD                           mood.df
+
+    + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
+    + STEMMED | MOOD                           mood.df
 
 * OUTPUT:
-    
-      + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
+
+    + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
 
 
 ### `final_df`
 
-* INPUT
-    
-       + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
-      
-      
-* OUTPUT
-    
-      + TRACK_ID | TRACK_MOOD  lyrics_terms_df
+    * INPUT
+        
+        + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
+          
+          
+    * OUTPUT
+        
+        + TRACK_ID | TRACK_MOOD  lyrics_terms_df
