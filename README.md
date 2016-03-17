@@ -16,34 +16,39 @@ Run `initialize_mood_data.py` to create `mood_df`.
 `mood_df` is a Pandas DataFrame mapping each stemmed word with a mood score if available in the sentiment lexicons
     
 Inputs:
-* STEMMED   | UNSTEMMED    mxm_reverse_mapping.txt
-* UNSTEMMED | MOOD (=1)    positive-words.txt
-* UNSTEMMED | MOOD (=-1)   negative-words.txt
+* `STEMMED`   | `UNSTEMMED`    // `mxm_reverse_mapping.txt`
+* `UNSTEMMED` | `MOOD` **(=1)**    // `positive-words.txt`
+* `UNSTEMMED` | `MOOD` **(=-1)**   // `negative-words.txt`
 
 Output:
-* STEMMED | MOOD          `mood_df`  
+* STEMMED | MOOD          // `mood_df`  
 
 
-### Initialize lyrics data
+### 2. Retrieve lyrics data
 
-`lyrics_df`: DataFrame with Tracks_ID, Count positive, Count negative, Count no mood info
+Run `initialize_lyrics_data.py` to create `lyrics_df`.
+`lyrics_df`is a Pandas DataFrame with the following fields: `track_ID`, `<word_1>`, ..., `<word_n>` and `count_others`.
 
-    * INPUTS
+`<word_1>`, ..., `<word_n>` are all the stemmed words retrieved from the sentiment lexicons and those field hold the count of each of those word for the corresponding `track_id`.
+`count_others` hold the count value of all the words that are not listed in the sentiment lexicons for the corresponding `track_id`.
+
+
+Run `fill_lyrics_data.py` to populate `lyrics_df`.
+
+Inputs
     
-        + TRACK_ID | STEMMED | COUNT | ISTEST      mxm_dataset.db        
-        + STEMMED | MOOD                           mood.df
+* `TRACK_ID` | `STEMMED` | `COUNT` | `ISTEST`     // `mxm_dataset.db`    
+* `STEMMED` | `MOOD`                              // `mood.df`
     
-    * OUTPUT
+Output
     
-        + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
+* `TRACK_ID` | `<word_1>` | ... | `<word_n>` | `count_others`
 
 
-### final_df
+### 3. Compute lyrics mood score
 
-    * INPUT
-        
-        + TRACK_ID | COUNT_POSITIVE | COUNT_NEGATIVE | COUNT_OTHER
+Inputs
+* `TRACK_ID` | `COUNT_POSITIVE` | `COUNT_NEGATIVE` | `COUNT_OTHER`
     
-    * OUTPUT
-        
-        + TRACK_ID | TRACK_MOOD  lyrics_terms_df
+Output
+* `TRACK_ID` | `TRACK_MOOD` | `lyrics_terms_df`
