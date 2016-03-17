@@ -1,16 +1,14 @@
 # sentiment-analysis
 
-### Sources
+### INPUTS
 
-Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar)
-    - positive-words.txt
-    - negative-words.txt
+Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar).
+Comes as 2 files: `positive-words.txt` and `negative-words.txt`.
     
-Collect mapping stemmed word-unstemmed word
-    - mxm_reverse_mapping.txt
-    
-Collect lyrics bag-of-words data file
-    - mxm_dataset.db
+Download the mapping file stemmed words to unstemmed words: [mxm_reverse_mapping.txt](http://labrosa.ee.columbia.edu/millionsong/sites/default/files/mxm_reverse_mapping.txt) 
+
+Download the lyrics bag-of-words SQLite database:
+[mxm_dataset.db](http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_dataset.db)
     
     
     
