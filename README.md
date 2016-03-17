@@ -2,14 +2,14 @@
 
 ### Sources
 
-    Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar)
+Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar)
     - positive-words.txt
     - negative-words.txt
     
-    Collect mapping stemmed word-unstemmed word
+Collect mapping stemmed word-unstemmed word
     - mxm_reverse_mapping.txt
     
-    Collect lyrics bag-of-words data file
+Collect lyrics bag-of-words data file
     - mxm_dataset.db
     
     
