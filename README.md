@@ -3,9 +3,7 @@
 ### Inputs
 
 1. Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar). Comes as two text files: `positive-words.txt` and `negative-words.txt`.
-    
 2. Download the mapping file stemmed words to unstemmed words: [mxm_reverse_mapping.txt](http://labrosa.ee.columbia.edu/millionsong/sites/default/files/mxm_reverse_mapping.txt) 
-
 3. Download the lyrics bag-of-words SQLite database: [mxm_dataset.db](http://labrosa.ee.columbia.edu/millionsong/sites/default/files/AdditionalFiles/mxm_dataset.db)
     
     
@@ -17,11 +15,11 @@ Run `initialize_mood_data.py` to create `mood_df`.
     
 Inputs:
 * `STEMMED`   | `UNSTEMMED`    // `mxm_reverse_mapping.txt`
-* `UNSTEMMED` | `MOOD` **(=1)**    // `positive-words.txt`
-* `UNSTEMMED` | `MOOD` **(=-1)**   // `negative-words.txt`
+* `UNSTEMMED` | `MOOD` *(=1)*    // `positive-words.txt`
+* `UNSTEMMED` | `MOOD` *(=-1)*   // `negative-words.txt`
 
 Output:
-* STEMMED | MOOD          // `mood_df`  
+* `STEMMED` | `MOOD`          // `mood_df`  
 
 
 ### 2. Retrieve lyrics data
@@ -36,12 +34,10 @@ Run `initialize_lyrics_data.py` to create `lyrics_df`.
 Run `fill_lyrics_data.py` to populate `lyrics_df`.
 
 Inputs
-    
 * `TRACK_ID` | `STEMMED` | `COUNT` | `ISTEST`     // `mxm_dataset.db`    
 * `STEMMED` | `MOOD`                              // `mood.df`
     
 Output
-    
 * `TRACK_ID` | `<word_1>` | ... | `<word_n>` | `count_others`
 
 
