@@ -1,6 +1,6 @@
 # sentiment-analysis
 
-### INPUTS
+### Inputs
 
 1. Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar). Comes as two text files: `positive-words.txt` and `negative-words.txt`.
     
@@ -10,20 +10,18 @@
     
     
     
-### Initialize mood data
+### 1. Initialize mood data
 
-`mood_df`: DataFrame mapping each stemmed word with a mood score if available in the sentiment lexicons
+Run `initialize_mood_data.py` to create `mood_df`.
+`mood_df` is a Pandas DataFrame mapping each stemmed word with a mood score if available in the sentiment lexicons
     
-    * INPUTS
-    
-        + STEMMED   | UNSTEMMED    mxm_reverse_mapping.txt
-        + UNSTEMMED | MOOD (=1)    positive-words.txt
-        + UNSTEMMED | MOOD (=-1)   negative-words.txt
-        
-        
-    * OUTPUT
-    
-        + STEMMED | MOOD
+Inputs:
+* STEMMED   | UNSTEMMED    mxm_reverse_mapping.txt
+* UNSTEMMED | MOOD (=1)    positive-words.txt
+* UNSTEMMED | MOOD (=-1)   negative-words.txt
+
+Output:
+* STEMMED | MOOD          `mood_df`  
 
 
 ### Initialize lyrics data
