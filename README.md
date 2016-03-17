@@ -2,7 +2,7 @@
 
 ### Sources
 
-    1. Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html)
+    1. Download sentiment lexicons [here](http://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar)
     - positive-words.txt
     - negative-words.txt
     
