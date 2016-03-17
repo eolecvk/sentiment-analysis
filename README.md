@@ -2,7 +2,7 @@
 
 ### Sources
 
-    Collect sentiment lexicons
+    1. Download sentiment lexicons (here)[http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html]
     - positive-words.txt
     - negative-words.txt
     
