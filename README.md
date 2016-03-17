@@ -48,3 +48,39 @@ Inputs
     
 Output
 * `TRACK_ID` | `TRACK_MOOD` | `lyrics_terms_df`
+
+
+
+
+
+
+### Citation
+
+## DATA SOURCES
+
+###  Opinion Lexicon: Positive & Negative
+
+`positive-words.txt` contains a list of POSITIVE opinion words (or sentiment words).
+`negative-words.txt` contains a list of NEGATIVE opinion words (or sentiment words).
+
+This file and the papers can all be downloaded from 
+http://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html
+
+Citation:
+Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews." 
+Proceedings of the ACM SIGKDD International Conference on Knowledge 
+Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle, Washington, USA.
+Bing Liu, Minqing Hu and Junsheng Cheng. "Opinion Observer: Analyzing and Comparing Opinions on the Web."
+Proceedings of the 14th International World Wide Web conference (WWW-2005), May 10-14, 2005, Chiba, Japan.
+
+### Mapping Stemmed word -> Unstemmed word
+
+`mxm_reverse_mapping.txt` contains the mapping for Stemmed word -> Unstemmed word
+
+This file can be downloaded from 
+http://labrosa.ee.columbia.edu/millionsong/sites/default/files/mxm_reverse_mapping.txt
+
+Citation:
+musiXmatch dataset, the official lyrics collection for the Million Song Dataset
+author: Thierry Bertin-Mahieux and Daniel P.W. Ellis and Brian Whitman and Paul Lamere
+title: The Million Song Dataset
